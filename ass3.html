@@ -1,0 +1,105 @@
+<!--Write a JavaScript function to perform arithmetic operations-->
+<html>
+<head>
+<script>
+function add(){
+			var a,b,c;
+			a=Number(document.getElementById("f").value);
+			b=Number(document.getElementById("s").value);
+			c= a + b;
+			document.getElementById("ans").value= c;
+}
+function sub(){
+		var a,b,c;
+		a=Number(document.getElementById("f").value);
+		b=Number(document.getElementById("s").value);
+		c= a - b;
+		document.getElementById("ans").value= c;
+}
+function mul(){
+			var a,b,c;
+			a=Number(document.getElementById("f").value);
+			b=Number(document.getElementById("s").value);
+			c= a * b;
+			document.getElementById("ans").value= c;
+}
+function div(){
+	var a,b,c;
+	a=Number(document.getElementById("f").value);
+	b=Number(document.getElementById("s").value);
+	c= a / b;
+	document.getElementById("ans").value= c;n
+}
+function mod(){
+	var a,b,c;
+	a=Number(document.getElementById("f").value);
+	b=Number(document.getElementById("s").value);
+	c= a % b;
+	document.getElementById("ans").value= c;
+}
+function pow() {
+var a,b,c;
+	a=Number(document.getElementById("f").value);
+	b=Number(document.getElementById("s").value);
+	 c = Math.pow(a, b);
+	document.getElementById("ans").value = c;
+}
+function min() {
+var a,b,c;
+	a=Number(document.getElementById("f").value);
+	b=Number(document.getElementById("s").value);
+	c = Math.min(a, b);
+  document.getElementById("ans").value = c;
+}
+function max() {
+var a,b,c;
+	a=Number(document.getElementById("f").value);
+	b=Number(document.getElementById("s").value);
+	c = Math.max(a, b);
+  document.getElementById("ans").value = c;
+}
+function exp()
+{	
+	var a,b,c;
+	a=Number(document.getElementById("f").value);
+	b=Number(document.getElementById("s").value);
+	c  = Math.exp(a);
+	//c  = Math.exp(b); 
+	document.getElementById("ans").value = c;
+}
+function sqrt()
+{	
+	var a,b,c;
+	a=Number(document.getElementById("f").value);
+	b=Number(document.getElementById("s").value);
+	c  = Math.sqrt(a);
+	//c  = Math.exp(b); 
+	document.getElementById("ans").value = c;
+}
+
+</script>
+</head>
+<body bgColor="blue" >
+	<table border="1">
+			<tr>
+				Enter the First number : <input id="f"><br><br>
+				
+				Enter the Second number: <input id="s">
+			</tr><br>
+			
+					<tr><button onclick="add()">Add</button></tr>
+					<tr><button onclick="sub()">sub</button></tr>
+					<tr><button onclick="mul()">mul</button></tr>
+					<tr><button onclick="div()">div</button></tr>
+					<tr><button onclick="mod()">mod</button></tr>
+					<tr><button onclick="pow()">pow</button></tr>
+					<tr><button onclick="min()">min</button></tr>
+					<tr><button onclick="max()">max</button></tr>
+					<tr><button onclick="exp()">exp</button></tr>
+					<tr><button onclick="sqrt()">sqrt</button></tr>
+			
+			
+	</table>
+	<input id="ans">
+</body>
+</html>

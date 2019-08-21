@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Loops</h2>
+
+
+
+<p id="demo"></p>
+
+<script>
+var txt = [10,20,20,35,30];
+var len =txt.length; 
+var newtxt = [];
+for (i = 0; i < len; i++) 
+{
+  if ( txt[i] == txt[i+1]) 
+  { 
+  	
+    continue;
+  }
+  else
+  {
+  		newtxt[i] = txt[i];
+  }
+}
+for (i = 0; i < len; i = i + 2) 
+{
+ 	document.write(newtxt[i]+" ");
+}
+ 
+</script>
+
+</body>
+</html>
+
+
+<!--<html>
+<head>
+<title>Duplicate Number Don't display</title>
+</head>
+<body>
+	
+	
+	<script>
+		function duplicate()
+		{
+				
+				
+				var arr = [10,20,20,30,30];
+				
+				var len = Arr.length;
+				//document.getElementById("demo").innerHTML=len;
+				var newarr = [];
+				
+					for(var j = 0;j < len; j++)
+					{	
+						if(arr[j) == arr[j+1])
+						{
+							continue;
+						}
+						else
+						{
+							newarr [i] = arr[i];
+						}
+					}
+					
+				for(var i =0;i < len;i=i+2)
+				{
+					document.write(newarr[i] + " ");
+				}
+		}
+
+
+
+</script>
+<input type="button" onclick="duplicate()"value="click me">
+<p id="demo"></p>
+
+
+</body>
+</html>-->

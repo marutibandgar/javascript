@@ -1,0 +1,58 @@
+<html>
+<body>
+Enter your String:<input type="text" id="userInput"=><br><br>
+Enter chracter :<input type="text" id="search"=><br><br>
+Enter Number:<input type="text" id="search1"=><br><br>
+    <button onclick="test()">Submit</button>
+   <p id="demo"></p>
+   <p id="demo1"></p>
+   <script>
+  function test()
+    {
+		    
+		var userInput = document.getElementById("userInput").value;
+		document.getElementById("demo").innerHTML = userInput;
+        var str1 = userInput;
+		  
+		var search = document.getElementById("search").value;
+		document.getElementById("demo").innerHTML = search;
+		
+		
+		var str2 = str1.replace(" ","");
+		var len = str2.length;
+		
+		  
+		  for(var i=0;i<str2.length;i++)
+		  {
+		     if(str2[i]==search)
+			{
+			   var  n= " " +i+ " ";
+			   
+			   document.getElementById("demo").innerHTML = n;
+			   //document.getElementById("demo1").innerHTML = arr[i];
+				break;
+		    }
+					   
+					  
+		 }
+		 var search1 = document.getElementById("search1").value;
+		document.getElementById("demo1").innerHTML = search1;
+	
+		 
+		for(var i=0;i<str2.length;i++)
+		  {
+		     if(i == search1)
+			{
+			//var m = " " +str2[i]+ "";
+			   
+			   document.getElementById("demo1").innerHTML = str2[i];
+				break;
+		    }
+					   
+					  
+		 } 
+	
+	}
+    </script>
+</body>
+</html>

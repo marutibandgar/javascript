@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p></p>
+
+<button onclick="myFunction()">click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+var arr = [40, 100, 1, 5, 25, 10];
+var n= arr.length;
+for(j=0;j<arr.length;j++)
+{
+   for(i=0;i<n-1;i++)
+          {
+            if(arr[i]>arr[i+1])
+        	{ 
+              temp=arr[i+1];
+             arr[i+1]=arr[i];
+             arr[i]=temp;
+            }
+  		}
+}  
+
+ document.getElementById("demo").innerHTML = arr[1];
+  
+}
+</script>
+
+</body>
+</html>
+
+
